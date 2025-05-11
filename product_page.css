@@ -27,15 +27,8 @@ h1 {
 .container {
     display: flex;
     felx-wrap: wrap; 
-    gap: 2em;
+    gap: 2rem;
     padding: 2rem; 
-    max-width: 1000px; 
-    margin: 2rem auto; 
-    background: #fff; 
-    margin-top: 2rem; 
-    margin-bottom: 2rem;
-    border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
 }
 .thumbnail-row {
   display: flex;
@@ -55,45 +48,34 @@ h1 {
   border-color: #333;
 }
 .product-image {
-  flex: 1 1 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .product-image img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  max-height: 500px;
-  object-fit: cover;
 }
 
 .product-details {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex: 1;
+  min-width: 300px;
 }
 
 .product-details h1 {
-  margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
 .price {
   font-size: 1.5rem;
-  color: #d35400;
-  margin-bottom: 1rem;
-}
-
-.sizes {
   margin: 1rem 0;
+  color: #d35400;
 }
 
-.sizes label {
-  margin-right: 0.5rem;
-}
-
-select {
-  padding: 0.5rem;
-  font-size: 1rem;
+.sizes select {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
 }
 
 .description {
@@ -102,7 +84,7 @@ select {
 }
 
 button {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   background: #27ae60;
   color: white;
@@ -110,7 +92,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
-  width: fit-content;
 }
 
 button:hover {
