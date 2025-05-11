@@ -27,20 +27,25 @@ nav a {
 }
 .product-grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 1rem; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1rem;
+    margin-inline: 100px; 
 }
 .product { 
     background: #dcd7c9; 
-    padding: 1rem; 
+    padding: 1rem;
     border-radius: 8px; 
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); 
-    text-align: center; 
+    text-align: center;  
+    height: 400px;
+}
+.product:hover {
+    box-shadow: 1.5px 1.5px 5px 0.5px rgba(0,0,0,0.3);
 }
 .product img { 
     max-width: 100%; 
-    height: 150px; 
-    object-fit: cover; 
+    height: 20rem; 
+    object-fit: cover;
+    border-radius: 5px;
 }
 .product h3 { 
     margin: 0.5rem 0; 
